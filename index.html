@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LUMIN AI Games - Casino Inteligente</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🎰 Bem-vindo ao LUMIN AI Games 🎲</h1>
+        <nav>
+            <a href="apostas.html">🏆 Apostas ao Vivo</a> | 
+            <a href="casino.html">🎰 Casino</a> | 
+            <a href="carteira.html">💰 Minha Carteira</a>
+        </nav>
+    </header>
+    <main>
+        <section class="highlight">
+            <h2>Jogue e aposte com €Moeda!</h2>
+            <p>A plataforma de apostas online mais segura e interativa.</p>
+        </section>
+        <section class="games">
+            <h2>🎲 Jogos em Destaque</h2>
+            <div class="game-grid">
+                <div class="game-card" onclick="abrirJogo('roleta')">Roleta 🎡</div>
+                <div class="game-card" onclick="abrirJogo('blackjack')">Blackjack 🃏</div>
+                <div class="game-card" onclick="abrirJogo('slots')">Slots 🎰</div>
+            </div>
+        </section>
+        <section class="lumin-ai">
+            <h2>💡 LUMIN AI - Seu Assistente Inteligente</h2>
+            <p>Converse com o LUMIN AI para dicas de apostas, estratégias e promoções.</p>
+            <input type="text" id="chatInput" placeholder="Fale com o LUMIN AI..." onkeypress="if(event.key === 'Enter') enviarPergunta()">
+            <button onclick="enviarPergunta()">Enviar</button>
+            <div id="chatOutput"></div>
+        </section>
+    </main>
+</body>
+</html>
